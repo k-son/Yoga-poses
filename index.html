@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yoga poses</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <script async src="js/script.js"></script>
+  <script defer src="js/touch.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">becela glass art</h1>
+  </header>
+
+  <main>
+    <!-- Insert image srcset with class="showcase__image", data-title and data-dimensions -->
+    <section class="showcase" id="art">
+      <div class="showcase__imgContainer">
+        <img srcset="img/net-1@x2.jpg 2x"
+          src="img/net-1@x1.jpg" alt="art" class="showcase__image" data-original="Untitled 1" data-english="11 x 40 x 80">
+      </div>
+      
+      <!-- Left and right chevron arrows -->
+      <div class="showcase__icon-box showcase__icon-box--left">
+        <button class="showcase__button" aria-label="Show previous image">
+          <svg class="showcase__icon" id="showcase__icon--left">
+            <use xlink:href="img/iconsprite.svg#chevron-left"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="showcase__icon-box showcase__icon-box--right">
+        <button class="showcase__button" aria-label="Show next image">
+          <svg class="showcase__icon" id="showcase__icon--right">
+            <use xlink:href="img/iconsprite.svg#chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Dynamically generated bullets, one for each image from showcase__imgContainer -->
+      <div class="bullets-box"></div>
+
+      <div class="description">
+        <p class="description__title"></p>
+        <p class="descritption__dimensions" id="author"></p>
+      </div>
+    </section>
+  </main>
+
+    <hr>
+
+  <!-- Contact info -->
+  <footer class="footer" id="contact">
+    <p class="footer__contact">Contact me: <a class="footer__mail" href="mailto:#">xyz@mail.mail</a></p>
+    <p class="footer__credits">2019 &copy; <a class="footer__credits-link" href="https://www.k-son.eu" target="_blank">k-son</a></p>
+  </footer>
+ 
+
+</body>
+</html>
