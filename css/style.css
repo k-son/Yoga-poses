@@ -1,8 +1,11 @@
 :root {
   --color-bg-primary: #fff;
   --color-primary: #000;
-  --color-secondary: #e6a008;
-  --color-active: rgb(25, 216, 0);
+  --color-secondary: #ffcc33;
+  --color-secondary: #f3bc16;
+  --color-tertiary: #0195ff;
+  --color-tertiary: #0085e4;
+  --color-active: #00c677;
   --color-logo: #000; }
 
 * {
@@ -109,7 +112,15 @@ body {
 .footer {
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid var(--color-primary); }
+  border-top: 1px solid #444; }
+  .footer__credits {
+    font-size: 1.4rem; }
+    .footer__credits__link, .footer__credits__link:link, .footer__credits__link:visited {
+      text-decoration: none;
+      color: var(--color-tertiary); }
+    .footer__credits__link:hover, .footer__credits__link:active, .footer__credits__link:focus {
+      color: var(--color-active);
+      outline: none; }
 
 main {
   display: flex;
