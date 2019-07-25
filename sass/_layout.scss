@@ -1,0 +1,47 @@
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: 3rem auto;
+
+  @media screen and (min-width: $bp-900) {
+    flex-direction: row;
+    max-width: 118rem;
+  }
+}
+
+.section {
+
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullets-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.4rem auto;
+}
+
+.article {
+  padding: .8rem 2.4rem 2.4rem 2.4rem;
+}
+
+.footer {
+
+  @media screen and (min-width: $bp-900) {
+    margin-top: 3.2rem;
+  }
+}

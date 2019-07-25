@@ -1,10 +1,10 @@
 ////// SHOWCASE
 
 /// DOM elements
-const chevronLeft = document.getElementById("showcase__icon--left");
-const chevronRight = document.getElementById("showcase__icon--right");
-const imgTitle = document.querySelector(".description__title");
-const imgDimensions = document.querySelector(".descritption__dimensions");
+const chevronLeft = document.getElementById("showcase__button--left");
+const chevronRight = document.getElementById("showcase__button--right");
+const nameOriginal = document.querySelector(".name__original");
+const nameEnglish = document.querySelector(".name__english");
 const images = document.querySelectorAll(".showcase__image");
 
 /// Create bullets depending on number of images
@@ -24,8 +24,8 @@ let currIndex = 0;
 let prevIndex;
 let currImage = images[currIndex];
 currImage.classList.add("showcase__image--active");
-imgTitle.textContent = currImage.dataset.title;
-imgDimensions.textContent = currImage.dataset.dimensions;
+nameOriginal.textContent = currImage.dataset.original;
+nameEnglish.textContent = currImage.dataset.english;
 bullets[currIndex].classList.add("bullet--active");
 
 /// Functions
@@ -33,8 +33,8 @@ function showCurrent() {
   currImage = images[currIndex];
   images[prevIndex].classList.remove("showcase__image--active");
   images[currIndex].classList.add("showcase__image--active");
-  imgTitle.textContent = currImage.dataset.title;
-  imgDimensions.textContent = currImage.dataset.dimensions;
+  nameOriginal.textContent = currImage.dataset.original;
+  nameEnglish.textContent = currImage.dataset.english;
   bullets[prevIndex].classList.remove("bullet--active");
   bullets[currIndex].classList.add("bullet--active");
 };
