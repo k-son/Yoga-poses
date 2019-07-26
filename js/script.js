@@ -3,8 +3,8 @@
 /// DOM elements
 const chevronLeft = document.getElementById("showcase__button--left");
 const chevronRight = document.getElementById("showcase__button--right");
-const nameOriginal = document.querySelector(".name__original");
-const nameEnglish = document.querySelector(".name__english");
+const nameOriginal = document.querySelector(".name--original");
+const nameEnglish = document.querySelector(".name--english");
 const images = document.querySelectorAll(".showcase__image");
 const poseDescriptions = document.querySelectorAll(".pose");
 

@@ -1,9 +1,9 @@
 :root {
   --color-bg-primary: #fff;
-  --color-primary: #000;
-  --color-secondary: #ffcc33;
+  --color-primary: #222;
+  --color-grey-1: #444;
+  --color-grey-2: #999;
   --color-secondary: #f3bc16;
-  --color-tertiary: #0195ff;
   --color-tertiary: #0085e4;
   --color-active: #00c677;
   --color-logo: #000; }
@@ -34,15 +34,17 @@ body {
   min-height: 100vh; }
 
 .header {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem; }
-  @media screen and (min-width: 56.25em) {
-    .header {
-      margin: 3.2rem 0; } }
+  text-align: center; }
 
 .logo {
-  font-size: 3rem; }
+  font-family: 'Luckiest Guy', cursive;
+  color: var(--color-active);
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem; }
+  @media screen and (min-width: 56.25em) {
+    .logo {
+      font-size: 5.4rem; } }
 
 .showcase {
   height: 60vh;
@@ -93,27 +95,42 @@ body {
   margin-right: .5rem; }
 
 .name {
-  font-size: 2rem;
-  font-weight: 500; }
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  word-spacing: .2rem; }
+  .name--original {
+    color: var(--color-grey-2); }
+  .name--english {
+    color: var(--color-grey-1); }
 
 .pose {
   display: none; }
   .pose__intro {
     font-size: 1.6rem;
-    margin-top: 1.6rem; }
+    margin-top: 1.6rem;
+    color: var(--color-grey-2);
+    text-transform: uppercase; }
   .pose__title {
     font-size: 2.6rem;
     margin-top: .8rem; }
+    @media screen and (min-width: 56.25em) {
+      .pose__title {
+        font-size: 2.8rem; } }
   .pose__description {
     font-size: 1.6rem;
     margin-top: 2.4rem; }
+    @media screen and (min-width: 56.25em) {
+      .pose__description {
+        font-size: 1.8rem; } }
   .pose--active {
     display: block; }
 
 .footer {
   text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #444; }
+  padding: 2.4rem;
+  border-top: 1px solid var(--color-secondary); }
   .footer__credits {
     font-size: 1.4rem; }
     .footer__credits__link, .footer__credits__link:link, .footer__credits__link:visited {
@@ -122,6 +139,13 @@ body {
     .footer__credits__link:hover, .footer__credits__link:active, .footer__credits__link:focus {
       color: var(--color-active);
       outline: none; }
+
+.header {
+  width: 100%;
+  margin-top: 1.6rem; }
+  @media screen and (min-width: 56.25em) {
+    .header {
+      margin: 3.2rem 0; } }
 
 main {
   display: flex;
@@ -153,7 +177,9 @@ main {
 
 .article {
   padding: .8rem 2.4rem 2.4rem 2.4rem; }
+  @media screen and (min-width: 56.25em) {
+    .article {
+      margin-left: 1.5rem; } }
 
-@media screen and (min-width: 56.25em) {
-  .footer {
-    margin-top: 3.2rem; } }
+.footer {
+  margin-top: 5rem; }

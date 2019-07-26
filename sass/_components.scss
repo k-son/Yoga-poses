@@ -1,15 +1,17 @@
 .header {
-  width: 100%;
   text-align: center;
-  margin-top: 2rem;
-
-  @media screen and (min-width: $bp-900) {
-    margin: 3.2rem 0;
-  }
 }
 
 .logo {
-  font-size: 3rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: var(--color-active);
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+
+  @media screen and (min-width: $bp-900) {
+    font-size: 5.4rem;
+  }
 }
 
 .showcase {
@@ -19,7 +21,6 @@
 
   &__imgContainer {
     order: 2;
-    //border: 2px solid var(--color-secondary);
     max-width: 670px;
     height: 100%;
   }
@@ -88,8 +89,19 @@
 }
 
 .name {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  word-spacing: .2rem;
+
+  &--original {
+    color: var(--color-grey-2);
+  }
+
+  &--english {
+    color: var(--color-grey-1);
+  }
 }
 
 .pose {
@@ -98,16 +110,26 @@
   &__intro {
     font-size: 1.6rem;
     margin-top: 1.6rem;
+    color: var(--color-grey-2);
+    text-transform: uppercase;
   }
  
   &__title {
     font-size: 2.6rem;
     margin-top: .8rem;
+
+    @media screen and (min-width: $bp-900) {
+      font-size: 2.8rem;
+    }
   }
 
   &__description {
     font-size: 1.6rem;
     margin-top: 2.4rem;
+
+    @media screen and (min-width: $bp-900) {
+      font-size: 1.8rem;
+    }
   }
 
   &--active {
@@ -117,8 +139,8 @@
 
 .footer {
   text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #444;
+  padding: 2.4rem;
+  border-top: 1px solid var(--color-secondary);
 
   &__credits {
     font-size: 1.4rem;
