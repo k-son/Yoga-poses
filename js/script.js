@@ -82,6 +82,3 @@ window.addEventListener('keydown', (e) => {
     previousImage();
   }
 });
-
-
-
