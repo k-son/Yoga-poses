@@ -2,7 +2,7 @@
 Simple page showing basic yoga poses with descriptions. Done for practice both - web development and yoga :)
 
 # Screenshot
-Example screenshot
+![Example screenshot](https://github.com/k-son/Yoga-poses/blob/master/yogaposes_screenshot.png)
 
 # Technologies
 * HTML5, BEM, Emmet
@@ -17,7 +17,7 @@ Example screenshot
 * Touch (swipe) and key (left and right arrow) events enabled.
 
 # Setup
-* In index.html add an <img> to .showcase > .showcase__imgContainer with:
+In index.html add an <img> to .showcase > .showcase__imgContainer with:
 * showcase__image class
 * data-original atribute (pose name in sanskrit)
 * data-english atribute (pose name in english)
