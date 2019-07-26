@@ -50,7 +50,6 @@ body {
   padding: 0 2.4rem; }
   .showcase__imgContainer {
     order: 2;
-    border: 2px solid var(--color-secondary);
     max-width: 670px;
     height: 100%; }
   .showcase__image {
@@ -97,17 +96,19 @@ body {
   font-size: 2rem;
   font-weight: 500; }
 
-.pose__intro {
-  font-size: 1.6rem;
-  margin-top: 1.6rem; }
-
-.pose__title {
-  font-size: 2.6rem;
-  margin-top: .8rem; }
-
-.pose__description {
-  font-size: 1.6rem;
-  margin-top: 2.4rem; }
+.pose {
+  display: none; }
+  .pose__intro {
+    font-size: 1.6rem;
+    margin-top: 1.6rem; }
+  .pose__title {
+    font-size: 2.6rem;
+    margin-top: .8rem; }
+  .pose__description {
+    font-size: 1.6rem;
+    margin-top: 2.4rem; }
+  .pose--active {
+    display: block; }
 
 .footer {
   text-align: center;

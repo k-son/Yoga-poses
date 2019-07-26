@@ -6,6 +6,7 @@ const chevronRight = document.getElementById("showcase__button--right");
 const nameOriginal = document.querySelector(".name__original");
 const nameEnglish = document.querySelector(".name__english");
 const images = document.querySelectorAll(".showcase__image");
+const poseDescriptions = document.querySelectorAll(".pose");
 
 /// Create bullets depending on number of images
 const bulletBox = document.querySelector(".bullets-box");
@@ -27,6 +28,7 @@ currImage.classList.add("showcase__image--active");
 nameOriginal.textContent = currImage.dataset.original;
 nameEnglish.textContent = currImage.dataset.english;
 bullets[currIndex].classList.add("bullet--active");
+poseDescriptions[currIndex].classList.add("pose--active");
 
 /// Functions
 function showCurrent() {
@@ -37,6 +39,8 @@ function showCurrent() {
   nameEnglish.textContent = currImage.dataset.english;
   bullets[prevIndex].classList.remove("bullet--active");
   bullets[currIndex].classList.add("bullet--active");
+  poseDescriptions[prevIndex].classList.remove("pose--active");
+  poseDescriptions[currIndex].classList.add("pose--active");
 };
 
 function nextImage() {

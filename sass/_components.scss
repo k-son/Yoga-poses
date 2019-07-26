@@ -19,7 +19,7 @@
 
   &__imgContainer {
     order: 2;
-    border: 2px solid var(--color-secondary);
+    //border: 2px solid var(--color-secondary);
     max-width: 670px;
     height: 100%;
   }
@@ -93,6 +93,7 @@
 }
 
 .pose {
+  display: none;
 
   &__intro {
     font-size: 1.6rem;
@@ -107,6 +108,10 @@
   &__description {
     font-size: 1.6rem;
     margin-top: 2.4rem;
+  }
+
+  &--active {
+    display: block;
   }
 }
 
