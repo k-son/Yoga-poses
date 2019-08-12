@@ -17,7 +17,7 @@ Simple page showing basic yoga poses with descriptions. Done for practice both -
 * Touch (swipe) and key (left and right arrow) events enabled.
 
 # Setup
-In index.html add an <img> to .showcase > .showcase__imgContainer with:
+In index.html add an image to .showcase > .showcase__imgContainer with:
 * showcase__image class
 * data-original atribute (pose name in sanskrit)
 * data-english atribute (pose name in english)
