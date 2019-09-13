@@ -82,3 +82,9 @@ window.addEventListener('keydown', (e) => {
     previousImage();
   }
 });
+
+/// Scroll down indication arrows
+const arrows = document.getElementById('scrollArrows');
+arrows.addEventListener('click', () => {
+  window.location = "#article";
+})

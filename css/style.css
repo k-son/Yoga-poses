@@ -3,6 +3,7 @@
   --color-primary: #222;
   --color-grey-1: #444;
   --color-grey-2: #999;
+  --color-grey-3: #e3e3e3;
   --color-secondary: #f3bc16;
   --color-tertiary: #0085e4;
   --color-active: #00c677;
@@ -104,6 +105,64 @@ body {
     color: var(--color-grey-2); }
   .name--english {
     color: var(--color-grey-1); }
+
+.scroll-down__box {
+  transform: scale(0.7);
+  animation: pulsateArrow 1s linear infinite alternate;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none; }
+  @media screen and (min-width: 56.25em) {
+    .scroll-down__box {
+      display: none; } }
+  .scroll-down__box:hover {
+    cursor: pointer; }
+  .scroll-down__box:focus {
+    outline: none; }
+
+.scroll-down__arrow {
+  align-self: center;
+  margin: 0 auto;
+  width: 9rem;
+  height: 4rem;
+  background: transparent; }
+  .scroll-down__arrow::before {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: .6rem;
+    background-color: var(--color-grey-3);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    transform: rotate(40deg);
+    transform-origin: right;
+    position: absolute;
+    top: 3rem;
+    left: 0; }
+  .scroll-down__arrow::after {
+    content: '';
+    display: block;
+    width: 5.1rem;
+    height: .6rem;
+    background-color: var(--color-grey-3);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    transform: rotate(320deg) translate(-0.3rem, -0.2rem);
+    transform-origin: left;
+    position: absolute;
+    top: 3rem;
+    left: 5rem; }
+
+.scroll-down__arrow:last-of-type {
+  transform: translateY(-2.3rem); }
+
+@keyframes pulsateArrow {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
 
 .pose {
   display: none; }
