@@ -127,6 +127,13 @@
       outline: none;
     }
 
+    &:focus .scroll-down__arrow::before, 
+    &:focus .scroll-down__arrow::after,
+    &:active .scroll-down__arrow::before, 
+    &:active .scroll-down__arrow::after {
+      background-color: var(--color-active);
+    }
+
   }
 
   &__arrow {

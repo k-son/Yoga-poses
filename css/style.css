@@ -121,6 +121,11 @@ body {
     cursor: pointer; }
   .scroll-down__box:focus {
     outline: none; }
+  .scroll-down__box:focus .scroll-down__arrow::before,
+  .scroll-down__box:focus .scroll-down__arrow::after,
+  .scroll-down__box:active .scroll-down__arrow::before,
+  .scroll-down__box:active .scroll-down__arrow::after {
+    background-color: var(--color-active); }
 
 .scroll-down__arrow {
   align-self: center;
