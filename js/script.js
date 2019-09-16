@@ -83,9 +83,20 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-/// Scroll down and up indication arrows
+/// Scroll down and up buttons
 const arrowsDown = document.getElementById('scrollArrows');
 const arrowsUp = document.getElementById('scrollArrowsUp');
+const anchorArticle = document.getElementById('article');
+
+window.addEventListener('scroll', () => {
+  if (document.documentElement.scrollTop > anchorArticle.offsetTop || document.body.scrollTop > anchorArticle.offsetTop) {
+    arrowsDown.classList.remove('isVisible');
+    arrowsUp.classList.add('isVisible');
+  } else {
+    arrowsDown.classList.add('isVisible');
+    arrowsUp.classList.remove('isVisible');
+  }
+});
 
 arrowsDown.addEventListener('click', () => {
   window.location = "#article";

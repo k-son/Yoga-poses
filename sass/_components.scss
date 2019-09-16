@@ -107,7 +107,7 @@
 .scroll-down {
 
   &__box {
-    transform: scale(.7);
+    transform: scale(.6);
     animation: pulsateArrow 1.2s linear infinite alternate;
     position: absolute;
     bottom: 1rem;
@@ -222,7 +222,7 @@
 .scroll-up {
 
   &__box {
-    transform: scale(.7) rotate(180deg);
+    transform: scale(.6) rotate(180deg);
     animation: pulsateArrow 1.2s linear infinite alternate;
     position: fixed;
     bottom: 3.5rem;
