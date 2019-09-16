@@ -83,8 +83,18 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-/// Scroll down indication arrows
-const arrows = document.getElementById('scrollArrows');
-arrows.addEventListener('click', () => {
+/// Scroll down and up indication arrows
+const arrowsDown = document.getElementById('scrollArrows');
+const arrowsUp = document.getElementById('scrollArrowsUp');
+
+arrowsDown.addEventListener('click', () => {
   window.location = "#article";
-})
+  arrowsDown.classList.toggle('isVisible');
+  setTimeout(function() {arrowsUp.classList.toggle('isVisible');}, 500);
+});
+
+arrowsUp.addEventListener('click', () => {
+  window.location = '#header';
+  arrowsUp.classList.toggle('isVisible');
+  setTimeout(function() {arrowsDown.classList.toggle('isVisible');}, 500);
+});

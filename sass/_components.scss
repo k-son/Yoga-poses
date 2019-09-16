@@ -108,12 +108,14 @@
 
   &__box {
     transform: scale(.7);
-    animation: pulsateArrow 1s linear infinite alternate;
+    animation: pulsateArrow 1.2s linear infinite alternate;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     background: transparent;
     border: none;
+    display: block;
+    visibility: hidden;
 
     @media screen and (min-width: $bp-900) {
       display: none;
@@ -148,7 +150,7 @@
       display: block;
       width: 5rem;
       height: .6rem;
-      background-color: var(--color-grey-3);
+      background-color: var(--color-tertiary);
       border-top-left-radius: 3rem;
       border-bottom-left-radius: 3rem;
       transform: rotate(40deg);
@@ -163,7 +165,7 @@
       display: block;
       width: 5.1rem;
       height: .6rem;
-      background-color: var(--color-grey-3);
+      background-color: var(--color-tertiary);
       border-top-right-radius: 3rem;
       border-bottom-right-radius: 3rem;
       transform: rotate(320deg) translate(-.3rem, -.2rem);
@@ -183,7 +185,6 @@
   0% {opacity:.4;}
   100% {opacity:1;}
 }
-
 
 .pose {
   display: none;
@@ -218,6 +219,84 @@
   }
 }
 
+.scroll-up {
+
+  &__box {
+    transform: scale(.7) rotate(180deg);
+    animation: pulsateArrow 1.2s linear infinite alternate;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    z-index: 9;
+    background: transparent;
+    border: none;
+    display: block;
+    visibility: hidden;
+
+    @media screen and (min-width: $bp-900) {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus .scroll-up__arrow::before, 
+    &:focus .scroll-up__arrow::after,
+    &:active .scroll-up__arrow::before, 
+    &:active .scroll-up__arrow::after {
+      background-color: var(--color-active);
+    }
+
+  }
+
+  &__arrow {
+    align-self: center;
+    margin: 0 auto;
+    width: 9rem;
+    height: 4rem;
+    background: transparent;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 5rem;
+      height: .6rem;
+      background-color: var(--color-tertiary);
+      border-top-left-radius: 3rem;
+      border-bottom-left-radius: 3rem;
+      transform: rotate(40deg);
+      transform-origin: right;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+    }
+  
+    &::after {
+      content: '';
+      display: block;
+      width: 5.1rem;
+      height: .6rem;
+      background-color: var(--color-tertiary);
+      border-top-right-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      transform: rotate(320deg) translate(-.3rem, -.2rem);
+      transform-origin: left;
+      position: absolute;
+      top: 3rem;
+      left: 5rem;
+    }
+  }
+
+  &__arrow:last-of-type {
+    transform: translateY(-2.3rem);
+  }
+}
+
 .footer {
   text-align: center;
   padding: 2.4rem;
@@ -240,6 +319,10 @@
       outline: none;
     }
   }
+}
+
+.isVisible {
+  visibility: visible;
 }
 
 
