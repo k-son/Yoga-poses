@@ -89,7 +89,7 @@ const arrowsUp = document.getElementById('scrollArrowsUp');
 const anchorArticle = document.getElementById('article');
 
 window.addEventListener('scroll', () => {
-  if (document.documentElement.scrollTop > anchorArticle.offsetTop || document.body.scrollTop > anchorArticle.offsetTop) {
+  if (document.documentElement.scrollTop > (anchorArticle.offsetTop - 100) || document.body.scrollTop > (anchorArticle.offsetTop - 100)) {
     arrowsDown.classList.remove('isVisible');
     arrowsUp.classList.add('isVisible');
   } else {
@@ -100,12 +100,12 @@ window.addEventListener('scroll', () => {
 
 arrowsDown.addEventListener('click', () => {
   window.location = "#article";
-  arrowsDown.classList.toggle('isVisible');
-  setTimeout(function() {arrowsUp.classList.toggle('isVisible');}, 500);
+  //arrowsDown.classList.toggle('isVisible');
+  //setTimeout(function() {arrowsUp.classList.toggle('isVisible');}, 500);
 });
 
 arrowsUp.addEventListener('click', () => {
   window.location = '#header';
-  arrowsUp.classList.toggle('isVisible');
-  setTimeout(function() {arrowsDown.classList.toggle('isVisible');}, 500);
+  //arrowsUp.classList.toggle('isVisible');
+  //setTimeout(function() {arrowsDown.classList.toggle('isVisible');}, 500);
 });
