@@ -25,7 +25,6 @@ In index.html add an image to .showcase > .showcase__imgContainer with:
 In index.html add pose description to .article  > .pose
 
 # To-do list:
-* Scroll encouragement
 * Improve footer
 * Favicon and meta tags
 * Cross browser tests
