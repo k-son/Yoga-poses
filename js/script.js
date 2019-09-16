@@ -89,7 +89,7 @@ const arrowsUp = document.getElementById('scrollArrowsUp');
 const anchorArticle = document.getElementById('article');
 
 window.addEventListener('scroll', () => {
-  if (document.documentElement.scrollTop > (anchorArticle.offsetTop - 100) || document.body.scrollTop > (anchorArticle.offsetTop - 100)) {
+  if (document.documentElement.scrollTop > (anchorArticle.offsetTop - 150) || document.body.scrollTop > (anchorArticle.offsetTop - 150)) {
     arrowsDown.classList.remove('isVisible');
     arrowsUp.classList.add('isVisible');
   } else {
