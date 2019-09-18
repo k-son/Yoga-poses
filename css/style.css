@@ -48,13 +48,19 @@ body {
       font-size: 5.4rem; } }
 
 .showcase {
-  height: 60vh;
+  height: 50vh;
   max-height: 50rem;
   padding: 0 2.4rem; }
+  @media screen and (min-width: 56.25em) {
+    .showcase {
+      height: 60vh; } }
   .showcase__imgContainer {
     order: 2;
     max-width: 670px;
-    height: 100%; }
+    height: 90%; }
+    @media screen and (min-width: 56.25em) {
+      .showcase__imgContainer {
+        height: 100%; } }
   .showcase__image {
     height: 100%;
     display: none; }
