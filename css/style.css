@@ -144,7 +144,7 @@ body {
 .scroll-down__box {
   transform: scale(0.6);
   animation: pulsateArrow 1.2s linear infinite alternate;
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   right: 1rem;
   background: transparent;
