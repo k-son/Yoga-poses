@@ -24,12 +24,8 @@ In index.html add an image to .showcase > .showcase__imgContainer with:
 
 In index.html add pose description to .article  > .pose
 
-# To-do list:
-* Favicon and meta tags
-* Cross browser tests
-
 # Status
-Project is: in progress
+Project is: finished
 
 # Contact
 Design and coding by @Jacek Jarczok.
