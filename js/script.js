@@ -1,3 +1,5 @@
+"use strict";
+
 ////// SHOWCASE
 
 /// DOM elements
